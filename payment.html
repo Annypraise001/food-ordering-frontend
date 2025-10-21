@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><title>Payment</title><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="css/style.css"/></head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand"><div class="logo">FO</div><div><h2 style="margin:0">Food Order</h2><small class="muted">Payment</small></div></div>
+      <div class="nav"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="cart.html">Cart</a></div>
+    </div>
+
+    <div class="card" style="max-width:520px;margin:auto">
+      <h3>Payment</h3>
+      <div id="order-summary"></div>
+      <div style="height:8px"></div>
+      <div class="form-row"><label>Payment Method</label>
+        <select id="method"><option>Card</option><option>Cash on delivery</option></select>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button id="payBtn" class="btn">Pay</button>
+        <a href="cart.html" class="btn ghost">Back</a>
+      </div>
+      <p id="msg" style="margin-top:8px"></p>
+    </div>
+  </div>
+
+  <script src="js/payment.js"></script>
+  <script>payment.init()</script>
+</body>
+</html>

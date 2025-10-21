@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><title>Menu</title><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="css/style.css"/></head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand"><div class="logo">FO</div><div><h2 style="margin:0">Food Order</h2><small class="muted">Menu</small></div></div>
+      <div class="nav"><a href="index.html">Home</a><a href="menu.html" class="active">Menu</a><a href="cart.html">Cart</a><a href="order.html">Orders</a></div>
+    </div>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <h3>Our Menu</h3>
+          <div class="menu-grid" id="menu-list"></div>
+        </div>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h4>Your Cart</h4>
+          <div id="mini-cart" class="cart-list"></div>
+          <div style="height:12px"></div>
+          <a class="btn" href="cart.html">Open Cart</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer"><small class="muted">Demo menu • localStorage</small></div>
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+  <script>menu.init(); main.initMiniCart();</script>
+</body>
+</html>

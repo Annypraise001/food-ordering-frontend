@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><title>Login</title><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="css/style.css"/></head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand"><div class="logo">FO</div><div><h2 style="margin:0">Food Order</h2><small class="muted">Login</small></div></div>
+      <div class="nav"><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="cart.html">Cart</a></div>
+    </div>
+
+    <div class="card" style="max-width:420px;margin:auto">
+      <h3>Login</h3>
+      <div class="form-row">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="you@example.com"/>
+      </div>
+      <div class="form-row">
+        <label>Password</label>
+        <input id="password" type="password" placeholder="password"/>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="btn" id="loginBtn">Login</button>
+        <a href="register.html" class="btn ghost">Register</a>
+      </div>
+      <p id="msg" style="margin-top:8px"></p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script>auth.initLogin()</script>
+</body>
+</html>
